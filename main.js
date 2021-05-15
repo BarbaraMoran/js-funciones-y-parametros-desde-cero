@@ -1,17 +1,28 @@
 "use strict";
 
-function getRandomNumber(max) {
-  return Math.ceil(Math.random() * max);
-}
+const myWordList = [
+  {
+    text: "Pencil",
+    total: 6,
+  },
+  {
+    text: "Thermo",
+    total: 2,
+  },
+  {
+    text: "TV",
+    total: 8,
+  },
+  {
+    text: "Phone",
+    total: 4,
+  },
+];
 
-const randomNumber = getRandomNumber(10);
-
-function writeThis(word, number) {
-  for (let i = 0; i < number; i++) {
-    console.log(word);
+function writeMyArray(arr) {
+  for (let i = 0; i < parseInt(arr[i].total); i++) {
+    console.log(arr[i].text);
   }
 }
 
-writeThis("patata", randomNumber);
-writeThis("aguacate", randomNumber);
-writeThis("Pizza", randomNumber);
+writeMyArray(myWordList);
