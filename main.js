@@ -20,7 +20,7 @@ const myWordList = [
 ];
 
 function writeMyArray(arr) {
-  for (let i = 0; i < parseInt(arr[i].total); i++) {
+  for (let i = 0; i < arr.length; i++) {
     console.log(arr[i].text);
   }
 }
