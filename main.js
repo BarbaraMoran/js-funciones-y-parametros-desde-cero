@@ -20,8 +20,15 @@ const myWordList = [
 ];
 
 function writeMyArray(arr) {
+  let text;
+  let total;
   for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i].text);
+    text = arr[i].text;
+    total = arr[i].total;
+
+    for (let i = 0; i < total; i++) {
+      console.log(text);
+    }
   }
 }
 
